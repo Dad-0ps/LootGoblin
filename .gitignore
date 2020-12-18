@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Project exclusions
+.DS_Store
+.idea
+.env
+
+
 # Distribution / packaging
 .Python
 build/
