@@ -152,7 +152,7 @@ async def DM(ctx, user: discord.User, *, message=None):
     message = message or "This Message is sent via DM"
     # Be annoying and send the message one word at a time
     word_list = message.split(' ')
-    for w in word_list:
+    async for w in word_list:
         await user.send(w)
 
     # Be uber annoying and send one character at a time
